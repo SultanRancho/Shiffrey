@@ -1,7 +1,7 @@
 # Shiffrey
 ![Shiffrey icon](https://github.com/SultanRancho/Shiffrey/blob/main/content/favicon.png?raw=true)
 
-Lightweight &amp; encrypted drive written in PHP and SQL
+Lightweight &amp; encrypted drive written in PHP, SQL and JS
 
 # Download
 Download the source code [here](https://github.com/SultanRancho/Shiffrey/raw/main/source.zip).
