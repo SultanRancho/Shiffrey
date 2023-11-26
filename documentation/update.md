@@ -6,7 +6,7 @@ Download the file [update.zip](https://github.com/SultanRancho/Shiffrey/raw/main
 
 Existing files should be replaced and new files added.
 
-By security, take a look at the file [update-warn.txt](https://github.com/SultanRancho/Shiffrey/raw/main/update.zip) and check if it's working.
+By security, take a look at the file [update-warn.txt](https://github.com/SultanRancho/Shiffrey/raw/main/update-warn.txt) and check if it's working.
 
 And it's done !
 
