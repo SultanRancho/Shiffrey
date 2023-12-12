@@ -9,3 +9,6 @@ Download the source code [here](https://github.com/SultanRancho/Shiffrey/release
 This software is in alpha version and may contain bugs. Make sure you have a backup of what you store.
 
 Don't use this software for illegal purposes, report any bugs to me and have fun !
+
+## Post-quantum
+Shiffrey only uses the AES symmetrical encryption alogrithm, which is not threatened by quantum computing until proven otherwise.
