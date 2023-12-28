@@ -11,9 +11,4 @@ This software is in alpha version and may contain bugs. Make sure you have a bac
 Don't use this software for illegal purposes, report any bugs to me and have fun !
 
 ## Post-quantum
-Shiffrey only uses the AES symmetrical encryption alogrithm, which is not threatened by quantum computing until proven otherwise.
-
-## Buy me a coffee
-**Lightning adresses:** simianspoon19@walletofsatoshi.com
-
-**BTC** : bc1q8x3fg862z9vr8n7v7jlntnqeyjkjzmmpg8wlee
+Shiffrey only uses the AES symmetrical encryption alogrithm, which is not threatened by quantum computing until proven otherwise
