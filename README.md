@@ -15,6 +15,7 @@ Shiffrey only uses the AES symmetrical encryption alogrithm, which is not threat
 
 ## Buy me a coffee
 ![Wallet of satoshi](https://github.com/SultanRancho/Shiffrey/blob/main/content/donate.png?raw=true)
+
 **Lightning adresses:** simianspoon19@walletofsatoshi.com
 
 **BTC** : bc1q8x3fg862z9vr8n7v7jlntnqeyjkjzmmpg8wlee
