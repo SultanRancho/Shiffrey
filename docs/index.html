@@ -1,1 +1,185 @@
-<h1>Hello world</h1>
+<!DOCTYPE html>
+<head>
+    <title>Shiffrey : Lightweight & encrypted drive written in PHP, SQL and JS</title>
+    <link rel="icon" type="images/png" href="https://github.com/SultanRancho/Shiffrey/raw/main/content/logo.svg?raw=true">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+    <div id="head">
+        <img id="icone" src="https://github.com/SultanRancho/Shiffrey/raw/main/content/logo.svg?raw=true">
+        <h1 class="title">Shiffrey : Lightweight & encrypted drive written in PHP, SQL and JS</h1>
+    </div>
+    <div id="download_div">
+        <button class="download_button" onclick="download()">Download the source code</button>
+        <a href="https://github.com/SultanRancho/Shiffrey"><button class="github_btn">Visit the github project</button></a>
+    </div>
+    <div class="data">
+        <sub class="data_sub">The time of download and a hash of your IP address are collected for statistical purposes. If you do not wish this data to be collected, please <a href="https://github.com/SultanRancho/Shiffrey/releases/">download here</a>.</sub>
+    </div>
+    <div class="line"></div>
+    <ul class="liste">
+        <li>Under M.I.T license</li>
+        <li>Written in PHP, JS and SQL</li>
+        <li>Work on most of the platform</li>
+        <li>Lite (less than 200 ko)</li>
+        <li>Use A.E.S encryption</li>
+    </ul>
+    <div class="line"></div>
+    <div class="bitcoin-donation">
+        <h2>Buy me a coffee</h2>
+        <img src="https://github.com/SultanRancho/Shiffrey/raw/main/content/donate.png?raw=true" alt="QR Code" />
+        <p><strong>Bitcoin Address:</strong> bc1q8x3fg862z9vr8n7v7jlntnqeyjkjzmmpg8wlee</p>
+        <p><strong>Lightning Address:</strong> simianspoon19@walletofsatoshi.com</p>
+    </div>
+</body>
+<style>
+    .data
+        {
+            margin: 10px auto;
+            width: 60%;
+            text-align: center;
+        }
+
+    .data_sub
+        {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    .liste
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+            margin: 20px auto;
+            width: fit-content;
+        }
+
+    .mit-license {
+        background-color: #e6e6e6; /* light grey color */
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+  
+    .mit-license:hover {
+        background-color: #cccccc; /* darker grey color on hover */
+    }
+
+    .bitcoin-donation {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      font-family: Arial, Helvetica, sans-serif;
+      width: 60%;
+      margin: 0 auto;
+      line-break: anywhere;
+    }
+    
+    .github_btn {
+        background-color: #24292e;
+        color: white;
+        font-weight: bold;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: medium;
+    }
+
+    .github_btn:hover {
+        background-color: #24292ef3;
+    }
+
+    .line
+        {
+            width: 30%;
+            height: 2px;
+            background-color: black;
+            margin: 10px auto;
+        }
+
+    .download_button {
+        background-color: #0365fc;
+        color: white;
+        font-weight: bold;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: medium;
+    }
+
+    .download_button:hover {
+        background-color: #024ea8;
+    }
+    
+    .title
+        {
+            font-size: x-large;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    #head
+        {
+            text-align: center;
+            width: 80%;
+            margin: 50px auto;
+        }
+    
+
+    #icone
+        {
+            width: 15%;
+        }
+
+    #download_div
+        {
+            margin: 20px auto;
+            width: fit-content;
+        }
+
+    @media screen and (max-width: 1000px) {
+        #icone
+            {
+                width: 40%;
+            }
+        
+        #head
+            {
+                width: 90%;
+            }
+        
+        .download_button
+            {
+                width: 100%;
+            }
+        
+        .github_btn
+            {
+                width: 100%;
+                margin-top: 5px;
+            }
+
+        .bitcoin-donation {
+            padding: 15px;
+            width: 90%;
+            text-align: center;
+        }
+
+        #download_div
+            {
+                text-align: center;
+            }
+    }
+</style>
+<script>
+    async function download(){
+        try {
+            await fetch("https://mmlokllkkook.000webhostapp.com/stats.php?t=d");
+        } catch (error) {
+            
+        }
+        window.open("https://github.com/SultanRancho/Shiffrey/releases/")
+    }
+</script>
