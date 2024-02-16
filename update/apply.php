@@ -31,8 +31,8 @@ copy_dir('../update/downloaded_data/source/', '*.php', '../');
 copy_dir('../update/downloaded_data/source/version.txt', '', '../');
 create_a_dir("../script/lib");
 create_a_dir("../lib");
-copy_dir('../update/downloaded_data/source/script/lib/*.*', '', '../script/lib');
-copy_dir('../update/downloaded_data/source/lib/*.*', '', '../lib');
+copy_dir('../update/downloaded_data/source/script/lib/*.*', '', '../script/lib/');
+copy_dir('../update/downloaded_data/source/lib/*.*', '', '../lib/');
 
 
 // Add a new column in the 'user' table
@@ -45,7 +45,9 @@ if (!$result){
     
     if (!$result){
         die('{"success": false, "message" : "An error happend while adding the column totp to the table user"}');
-    }   
+    }
+    
+    echo '{"success": true, "message": "Update successfully done."}';
 }
 
 ?>
