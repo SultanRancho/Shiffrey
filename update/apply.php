@@ -48,8 +48,8 @@ if (!$result){
     if (!$result){
         die('{"success": false, "message" : "An error happend while adding the column totp to the table user"}');
     }
-
-    echo '{"success": true, "message": "Update successfully done."}';    
 }
+
+echo '{"success": true, "message": "Update successfully done."}';    
 
 ?>
