@@ -19,7 +19,9 @@ function copy_dir($source_path, $suffixe, $goal_path){
 }
 
 function create_a_dir($path){
-    mkdir($path, $mode=0777);
+    if (!is_dir($path)){
+        mkdir($path, $mode=0777);
+    }
 }
 
 copy_dir('../update/downloaded_data/source/api/', '*.*', '../api/');
@@ -36,7 +38,7 @@ copy_dir('../update/downloaded_data/source/lib/', '*.*', '../lib/');
 
 
 // Add a new column in the 'user' table
-$sql = "SELECT `totp` FROM `user`; ";
+$sql = "SELECT COUNT(*) FROM information_schema.columns WHERE TABLE_NAME = 'user' AND COLUMN_NAME='totp'; ";
 $result = $conn->query($sql);
 
 if (!$result){
@@ -46,7 +48,7 @@ if (!$result){
     if (!$result){
         die('{"success": false, "message" : "An error happend while adding the column totp to the table user"}');
     }
-    
+
     echo '{"success": true, "message": "Update successfully done."}';    
 }
 
