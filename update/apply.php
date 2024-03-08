@@ -40,10 +40,10 @@ if (isset($GLOBALS['from_update']) && $GLOBALS['from_update']){
 
 
 	// Add a new column in the 'user' table
-	$sql = "SELECT COUNT(*) FROM information_schema.columns WHERE TABLE_NAME = 'user' AND COLUMN_NAME='totp'; ";
+	$sql = "SELECT COUNT(*) as total FROM information_schema.columns WHERE TABLE_NAME = 'user' AND COLUMN_NAME='totp' AND TABLE_SCHEMA='".$config->{"database"}->{"name"}."'; ";
 	$result = $conn->query($sql);
 
-	if (!$result){
+	if (!$result or $result->fetch_assoc()["total"] == 0){
 	    $sql = "ALTER TABLE `user` ADD `totp` TEXT NOT NULL AFTER `blocked`;";
 	    $result = $conn->query($sql);
 	    
