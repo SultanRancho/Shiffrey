@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body>
-    <div id="head">
-        <img id="icone" src="https://github.com/SultanRancho/Shiffrey/raw/main/content/logo.svg?raw=true" alt="Logo of Shiffrey">
-        <h1 class="title">Shiffrey : Lightweight & encrypted drive written in PHP, SQL and JS</h1>
+    <div id="banner">
+        <div id="head">
+            <img id="icone" src="https://github.com/SultanRancho/Shiffrey/raw/main/content/logo.svg?raw=true" alt="Logo of Shiffrey">
+            <h1 class="title">Shiffrey : Lightweight & encrypted drive written in PHP, SQL and JS</h1>
+        </div>
     </div>
     <div id="download_div">
         <a href="https://github.com/SultanRancho/Shiffrey/releases/"><button class="download_button">Download the source code</button></a>
@@ -25,6 +27,12 @@
     <div class="line"></div>
 </body>
 <style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background-color: #1f1f1f;
+    }
+
     .data
         {
             margin: 10px auto;
@@ -43,6 +51,7 @@
             font-size: large;
             margin: 20px auto;
             width: fit-content;
+            color: white;
         }
 
     .mit-license {
@@ -58,54 +67,53 @@
     }
     
     .github_btn {
-        background-color: #24292e;
+        background-color: #0365fc;
         color: white;
         font-weight: bold;
         padding: 10px 20px;
         border: none;
-        border-radius: 5px;
         cursor: pointer;
         font-size: medium;
     }
 
     .github_btn:hover {
-        background-color: #24292ef3;
+        background-color: #024ea8;
     }
 
     .line
         {
             width: 30%;
             height: 2px;
-            background-color: black;
+            background-color: white;
             margin: 10px auto;
         }
 
     .download_button {
-        background-color: #0365fc;
+        background-color: #00d400;
         color: white;
         font-weight: bold;
         padding: 10px 20px;
         border: none;
-        border-radius: 5px;
         cursor: pointer;
         font-size: medium;
     }
 
     .download_button:hover {
-        background-color: #024ea8;
+        background-color: #00a800;
     }
     
     .title
         {
             font-size: x-large;
             font-family: Arial, Helvetica, sans-serif;
+            color: white;
         }
 
     #head
         {
             text-align: center;
             width: 80%;
-            margin: 50px auto;
+            margin: 0px auto;
         }
     
 
@@ -116,8 +124,18 @@
 
     #download_div
         {
-            margin: 20px auto;
+            margin: 50px auto;
             width: fit-content;
+        }
+
+    #banner
+        {
+            margin: 0px;
+            padding: 0px;
+            background-image: url("https://github.com/SultanRancho/Shiffrey/raw/main/content/background.jpg?raw=true");
+            padding-top: 50px;
+            padding-bottom: 25px;
+            box-shadow: 5px 1px 30px 2px black;
         }
 
     @media screen and (max-width: 1000px) {
@@ -151,6 +169,7 @@
         #download_div
             {
                 text-align: center;
+                max-width: 90%;
             }
     }
 </style>
