@@ -51,8 +51,10 @@ if (isset($GLOBALS['from_update']) && $GLOBALS['from_update']){
 		die('{"success": false, "message" : "An error happend while adding the column totp to the table user"}');
 	    }
 	}
-
-	$config->{"totp"} = false;
+	
+	if (!isset($config->{"totp"})){
+		$config->{"totp"} = false;
+	}
 	file_put_contents($config_path, json_encode($config, JSON_PRETTY_PRINT));
 
 	echo '{"success": true, "message": "Update successfully done."}';    
