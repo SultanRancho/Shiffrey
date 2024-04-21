@@ -1,3 +1,0 @@
-No warn for the moment.
-
-If you have a problem, or if you have discovered a bug or a security issues, contact me on Github or by mail.
