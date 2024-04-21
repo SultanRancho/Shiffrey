@@ -27,10 +27,13 @@
     <div class="line"></div>
     <h2 class="title">Some screenshots :</h2>
     <div class="illustrations">
-	<img class="image_illus" src="https://github.com/SultanRancho/Shiffrey/raw/main/docs/illustrations/admin.png?raw=true" alt="A picture of the administration panel">
-	<img class="image_illus" src="https://github.com/SultanRancho/Shiffrey/raw/main/docs/illustrations/home.png?raw=true" alt="A picture of the home">
-	<img class="image_illus" src="https://github.com/SultanRancho/Shiffrey/raw/main/docs/illustrations/panel.png?raw=true" alt="A picture of the user panel">
-	<img class="image_illus" src="https://github.com/SultanRancho/Shiffrey/raw/main/docs/illustrations/upload.png?raw=true" alt="A picture of the upload interface">
+	<img class="image_illus" src="https://github.com/SultanRancho/Shiffrey/raw/main/docs/illustrations/admin.png?raw=true" alt="A picture of the administration panel" state="off">
+	<img class="image_illus" src="https://github.com/SultanRancho/Shiffrey/raw/main/docs/illustrations/home.png?raw=true" alt="A picture of the home" state="off">
+	<img class="image_illus" src="https://github.com/SultanRancho/Shiffrey/raw/main/docs/illustrations/panel.png?raw=true" alt="A picture of the user panel" state="off">
+	<img class="image_illus" src="https://github.com/SultanRancho/Shiffrey/raw/main/docs/illustrations/upload.png?raw=true" alt="A picture of the upload interface" state="off">
+    </div>
+    <div class="footer">
+	<a href="https://github.com/Sultanrancho">Made by Sultanrancho</a>
     </div>
 </body>
 <style>
@@ -38,6 +41,10 @@
         margin: 0px;
         padding: 0px;
         background-color: #1f1f1f;
+    }
+
+    a {
+	color: white;
     }
 
     .data
@@ -58,7 +65,7 @@
     .image_illus:hover
 	{
 	    box-shadow:0px 0px 10px 1px white; 
-	    transition: 1s;
+	    transition: 0.5s;
 	}
 
     .data_sub
@@ -139,6 +146,16 @@
 	    text-align: center;
         }
 
+    .footer
+	{
+	    text-align: center;
+	    color: white;
+	    font-family: Arial; 
+	    padding: 10px;
+	    background-color: #1a1a1a;
+	    margin-top: 30px;
+	}
+
     #head
         {
             text-align: center;
@@ -216,3 +233,14 @@
             }
     }
 </style>
+<script>
+document.getElementsByClassName("illustrations")[0].addEventListener("click", function(e) {
+	ind = e.target;
+	if (window.getComputedStyle(ind).maxWidth == "45%")
+	    {
+		ind.style.maxWidth = "100%"
+	    } else if (window.getComputedStyle(ind).maxWidth == "100%"){
+		ind.style.maxWidth = ""
+	    }
+	});
+</script>
