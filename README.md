@@ -3,6 +3,8 @@
 
 Lightweight &amp; encrypted drive written in PHP, SQL and JS
 
+[Visit the site](https://sultanrancho.github.io/Shiffrey/)
+
 # Download
 The source code can be [downloaded here](https://github.com/SultanRancho/Shiffrey/releases/).
 
